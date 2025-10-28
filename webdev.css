@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');    
+* {
+  font-family: 'Exo', sans-serif;
+}
+:root
+{
+    --highlight-color: #dd5471;
+}
+body
+{
+    background-image: linear-gradient(to right, #ced5d8 0%, #ced5d8 70%, #bacdd6 100% );
+}
+.contact
+{
+    margin: 30px;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(to right, white 0%, white 75%, #183a4a 75%, #183a4a 100%);
+}
+
+.flex-container
+{
+    display: flex;
+    padding:20px;
+    justify-content: space-around;
+}
+.form-fields
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-fields > input, .form-fields > select
+{
+    padding: 15px;
+    border: 1.6px solid lightgrey;
+}
+.beforeForm > p
+{
+    font-weight: bold;
+}
+
+.group1 
+{
+    position: relative;
+    .placeholder
+    {
+        position: absolute;
+        top: 14px;
+        left: 16px;
+        color: grey;
+    }
+    .asterisk
+    {
+        color: red;
+    }
+    label
+    {
+        font-size: small;
+    }
+    input
+    {
+            padding: 15px;
+            border: 1.6px solid lightgrey;
+            width: -webkit-fill-available;
+    }
+}
+
+.group2
+{
+    position: relative;
+    .placeholder
+    {
+        position: absolute;
+        top:14px;
+        left: 16px;
+        color: grey;
+    }
+    .asterisk
+    {
+        color:red;
+    }
+    label
+    {
+        font-size: small;
+    }
+    input
+    {
+        padding: 15px;
+        border: 1.6px solid lightgrey;
+        width: -webkit-fill-available;
+    }
+}
+
+.submitButton
+{
+    padding:10px;
+    background-color: var(--highlight-color);
+    color:white;
+    border:none;
+    font-size: medium;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.locationContainer
+{
+    text-align:center;
+}
+.beforeForm
+{
+    padding-left: 20px;
+}
+.location
+{
+    padding: 20px;
+}
+.contactType
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+.contactType > div
+{
+    font-size:smaller;
+    display:flex;
+}
+.contactType > div > svg
+{
+    width:25px;
+    height:25px;
+}
+.phone-number, .fax-number, .emailAddress
+{
+    color: var(--highlight-color);
+}
+@media only screen and (max-width: 1200px)
+{
+    .flex-container
+    {
+        flex-direction: column;
+    }
+    .get-in-touch, .locationContainer
+    {
+        width: 100%;
+    }
+    .contact
+    {
+        background-image: linear-gradient(to bottom, white 0%, white 75%, #183a4a 75%, #183a4a 100%);
+    }
+}
+@media only screen and (max-width: 768px)
+{
+   .location > iframe
+    {
+       width: 80%;
+       height:300px;
+    }
+    .contactType
+    {
+         flex-direction: column;
+         gap: 10px;
+         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px)
+{
+   .location > iframe
+    {
+       width: 70%;
+    }
+}
+
